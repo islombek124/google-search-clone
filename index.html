@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>Google</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="bg-white block h-full m-0 p-0">
+    <div class="wrapper flex flex-col h-full">
+      <main
+        class="absolute"
+        style="top: 50%; left: 50%; transform: translate(-50%, -100%)"
+      >
+        <div
+          class="flex flex-col items-center"
+          style="
+            min-height: 92px;
+            max-height: 290px;
+            height: calc(100% - 560px);
+          "
+        >
+          <div
+            style="
+              max-height: 92px;
+              position: relative;
+              height: 100%;
+              margin-top: auto;
+            "
+          >
+            <img
+              src="/googlelogo_color_272x92dp.png"
+              style="object-position: center bottom"
+              class="mx-auto object-contain w-auto max-w-full max-h-full"
+              alt=""
+            />
+          </div>
+        </div>
+        <form
+          action="https://www.google.com/search"
+          method="get"
+          class="flex bg-white mx-auto items-center relative mt-10"
+          style="
+            height: 44px;
+            max-width: 584px;
+            border: 1px solid #dfe1e5;
+            z-index: 3;
+            height: 44px;
+            border-radius: 24px;
+            min-width: 320px;
+            width: 584px;
+          "
+        >
+          <div
+            class="flex items-center m-auto relative h-full ml-3 mr-5"
+            style="line-height: 20px; color: #9aa0a6"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="10" cy="10" r="7"></circle>
+              <line x1="21" y1="21" x2="15" y2="15"></line>
+            </svg>
+          </div>
+          <div class="h-full flex items-center w-full">
+            <input
+              class="inp bg-transparent m-0 p-0 flex outline-0"
+              style="
+                flex: 100%;
+                font-size: 16px;
+                word-wrap: break-word;
+                height: 34px;
+              "
+              maxlength="2048"
+              name="q"
+              type="text"
+              aria-autocomplete="both"
+              aria-haspopup="false"
+              autocapitalize="off"
+              autocomplete="off"
+              autocorrect="off"
+              autofocus=""
+              role="combobox"
+              spellcheck="false"
+              title="Поиск"
+              value=""
+              aria-label="Найти"
+            />
+          </div>
+          <div
+            class="btn1 absolute bottom-0 top-10"
+            style="
+              height: 70px;
+              padding-top: 18px;
+              left: 50%;
+              transform: translateX(-50%);
+            "
+          >
+            <center>
+              <input
+                class="hover:shadow-md"
+                value="Поиск в Google"
+                aria-label="Поиск в Google"
+                name="btnK"
+                role="button"
+                tabindex="0"
+                type="submit"
+                style="
+                  background-color: #f8f9fa;
+                  border: 1px solid #f8f9fa;
+                  border-radius: 4px;
+                  color: #3c4043;
+                  font-family: arial, sans-serif;
+                  font-size: 14px;
+                  margin: 11px 4px;
+                  padding: 0 16px;
+                  line-height: 27px;
+                  height: 36px;
+                  min-width: 54px;
+                  text-align: center;
+                  cursor: pointer;
+                  user-select: none;
+                "
+              />
+            </center>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
